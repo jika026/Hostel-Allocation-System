@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Login | Hostel Allocation System</title>
+  </head>
+  <body class="bg-slate-200">
+    <header class="w-full bg-green-800 sticky top-0 z-10">
+      <div class="h-32 grid place-items-center">
+        <h1 class="uppercase text-4xl font-bold text-white">
+          hostel allocation system
+        </h1>
+      </div>
+      <nav class="bg-green-900 h-12 grid place-items-center">
+        <ul class="flex gap-x-12">
+          <li>
+            <a href="../index.html" class="text-white text-xl font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/registration.html"
+              class="text-white text-xl font-semibold"
+              >Registration</a
+            >
+          </li>
+          <li>
+            <a href="/src/login.html" class="text-white text-xl font-semibold"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/dashboard.html"
+              class="text-white text-xl font-semibold"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="/src/admin.html" class="text-white text-xl font-semibold"
+              >Admin</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mx-44 my-4 bg-white rounded-lg py-8 px-4">
+      <h2 class="font-bold text-2xl mb-4">Student Login</h2>
+      <form id="admin-login" class="flex flex-col gap-y-4 mb-4">
+        <input
+          type="text"
+          placeholder="Email/Matric Number"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4"
+        />
+        <button
+          type="submit"
+          class="bg-green-800 h-12 rounded-md px-4 font-semibold text-white text-xl"
+        >
+          Login
+        </button>
+      </form>
+      <nav class="flex flex-col">
+        <a href="#" class="underline hover:no-underline">Forgot password?</a>
+        <a href="#" class="underline hover:no-underline"
+          >Register as a new student</a
+        >
+      </nav>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Register | Hostel Allocation System</title>
+  </head>
+  <body class="bg-slate-200">
+    <header class="w-full bg-green-800 sticky top-0 z-10">
+      <div class="h-32 grid place-items-center">
+        <h1 class="uppercase text-4xl font-bold text-white">
+          hostel allocation system
+        </h1>
+      </div>
+      <nav class="bg-green-900 h-12 grid place-items-center">
+        <ul class="flex gap-x-12">
+          <li>
+            <a href="../index.html" class="text-white text-xl font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/registration.html"
+              class="text-white text-xl font-semibold"
+              >Registration</a
+            >
+          </li>
+          <li>
+            <a href="/src/login.html" class="text-white text-xl font-semibold"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/dashboard.html"
+              class="text-white text-xl font-semibold"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="/src/admin.html" class="text-white text-xl font-semibold"
+              >Admin</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mx-44 my-4 bg-white rounded-lg py-8 px-4">
+      <h2 class="font-bold text-2xl mb-4">Student Registration</h2>
+      <form id="admin-login" class="flex flex-col gap-y-4 mb-4">
+        <select
+          name="student-type"
+          id="student-type"
+          class="h-12 border-gray-300 border-2 rounded-md px-4 bg-white focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        >
+          <option value="" disabled selected>Select student type</option>
+          <option value="part-time">Undergraduate Part-Time</option>
+          <option value="full-time">Undergraduate Full-time</option>
+          <option value="master-pg">Masters</option>
+          <option value="phd-pg">PHD</option>
+        </select>
+
+        <input
+          type="text"
+          placeholder="Application Number/Matric Number"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <input
+          type="text"
+          placeholder="Surname"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        /><input
+          type="text"
+          placeholder="First Name"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <input
+          type="text"
+          placeholder="Other Names(Optional)"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <select
+          name="gender"
+          id="gender"
+          class="h-12 border-gray-300 border-2 rounded-md px-4 bg-white focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        >
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <select
+          name="department"
+          id="department"
+          class="h-12 border-gray-300 border-2 rounded-md px-4 bg-white focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        >
+          <option value="" disabled selected>Select Department</option>
+          <option value="comp-sci">Computer Science</option>
+          <option value="software">Sofware Engineering</option>
+          <option value="cyber">Cyber Security</option>
+          <option value="data-sci">Data Science</option>
+          <option value="comp-eng">Computer Engineering</option>
+          <option value="elec-eng">Electrical Engineering</option>
+          <option value="chem-eng">Chemical Engineering</option>
+          <option value="bio-med">Bio-Medical Engineering</option>
+          <option value="mech-eng">Mechanical Engineering</option>
+          <option value="other">Others</option>
+        </select>
+        <input
+          type="text"
+          placeholder="Level"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <input
+          type="text"
+          placeholder="Academic Session(e.g. 2024/2025)"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        /><input
+          type="text"
+          placeholder="Phone Number"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <input
+          type="email"
+          placeholder="Email address"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          class="w-full h-12 border-gray-300 border-2 rounded-md px-4 focus:outline-none focus:border-none focus:ring-2 focus:ring-green-800"
+        />
+        <button
+          type="submit"
+          class="bg-green-800 h-12 rounded-md px-4 font-semibold text-white text-xl"
+        >
+          Register
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Dashboard | Hostel Allocation System</title>
+  </head>
+  <body class="bg-slate-200">
+    <header class="w-full bg-green-800 sticky top-0 z-10">
+      <div class="h-32 grid place-items-center">
+        <h1 class="uppercase text-4xl font-bold text-white">
+          hostel allocation system
+        </h1>
+      </div>
+      <nav class="bg-green-900 h-12 grid place-items-center">
+        <ul class="flex gap-x-12">
+          <li>
+            <a href="../index.html" class="text-white text-xl font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/registration.html"
+              class="text-white text-xl font-semibold"
+              >Registration</a
+            >
+          </li>
+          <li>
+            <a href="/src/login.html" class="text-white text-xl font-semibold"
+              >Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/dashboard.html"
+              class="text-white text-xl font-semibold"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="/src/admin.html" class="text-white text-xl font-semibold"
+              >Admin</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mx-44 my-4 bg-white rounded-lg py-8 px-4">
+      <h2 class="font-bold text-2xl mb-4">Student Dashboard</h2>
+      <section id="student-info">
+        <!-- Student info will be injected here -->
+
+        <!-- <p>Welcome, John Doe</p>
+        <p>Matric Number: 12345</p>
+        <p>Department: Computer science</p> -->
+      </section>
+      <h3 class="font-bold text-xl mt-3 mb-2">Payment status</h3>
+      <section id="payment-status" class="mb-4">
+        <!-- Payment status will be injected here -->
+
+        <!-- <p>School fees: Unpaid</p>
+        <p>Hostel Fees: Unpaid</p> -->
+      </section>
+      <section class="flex gap-x-4">
+        <button
+          class="bg-green-800 px-2 py-1 rounded-sm text-white hover:scale-105 font-medium"
+        >
+          Pay School Fees
+        </button>
+        <button
+          class="bg-green-800 px-2 py-1 rounded-sm text-white hover:scale-105 font-medium"
+        >
+          Pay Hostel Fees
+        </button>
+        <button
+          class="bg-green-800 px-2 py-1 rounded-sm text-white hover:scale-105 font-medium"
+        >
+          Book Hostel
+        </button>
+        <button
+          class="bg-green-800 px-2 py-1 rounded-sm text-white hover:scale-105 font-medium"
+        >
+          Log out
+        </button>
+      </section>
+    </main>
+
+    <script>
+      const studentData = {
+        name: "John Doe",
+        matricNumber: "12345",
+        department: "Computer Science",
+        paymentStatus: {
+          schoolFees: "Unpaid",
+          hostelFees: "Paid",
+        },
+      };
+
+      // Inject student information
+      const studentInfo = document.getElementById("student-info");
+      studentInfo.innerHTML = `
+        <p>Welcome, ${studentData.name}</p>
+        <p>Matric Number: ${studentData.matricNumber}</p>
+        <p>Department: ${studentData.department}</p>
+      `;
+
+      // Inject payment status
+      const paymentStatus = document.getElementById("payment-status");
+      paymentStatus.innerHTML = `
+        <p>School Fees: ${studentData.paymentStatus.schoolFees}</p>
+        <p>Hostel Fees: ${studentData.paymentStatus.hostelFees}</p>
+      `;
+
+      //   making the fetch from the currently existing API
+
+      //     fetch("")
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     studentInfo.innerHTML = `
+      //       <p>Welcome, ${data.name}</p>
+      //       <p>Matric Number: ${data.matricNumber}</p>
+      //       <p>Department: ${data.department}</p>
+      //     `;
+      //     paymentStatus.innerHTML = `
+      //       <p>School Fees: ${data.paymentStatus.schoolFees}</p>
+      //       <p>Hostel Fees: ${data.paymentStatus.hostelFees}</p>
+      //     `;
+      //   });
+    </script>
+  </body>
+</html>
